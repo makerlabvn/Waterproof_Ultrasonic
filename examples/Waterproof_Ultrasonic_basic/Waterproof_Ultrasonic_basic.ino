@@ -1,8 +1,13 @@
 /*
 [link]: https://hshop.vn/products/cam-bien-sieu-am-chong-nuoc-ultrasonic-jsn-sr04t
 
-Echo(Tx)----3 (uno)
-Trig(Rx)----2 (uno)
+Wiring:
+  Echo(Tx)----3 (uno)
+  Trig(Rx)----2 (uno)
+
+Add Resistor to Hardware
+  Mode 1: R float (No value)
+  Mode 3: R = 120K
 
 */
 
@@ -14,7 +19,7 @@ Waterproof_Ultrasonic Waterproof_Ultrasonic(2,3,1);          // Mode 1:
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  Serial.println("MakerLab.vn test Waterproof Ultrasonic");
+  Serial.println("MakerLab.vn tests Waterproof Ultrasonic");
 }
 
 void loop() {
